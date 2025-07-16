@@ -549,7 +549,7 @@ export default function SignUp() {
     )
 
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/CRAFTJUDGE-signup`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/judge-signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -561,7 +561,7 @@ export default function SignUp() {
           ip: ip,
           state: formData.state,
           district: formData.district,
-          clubName: formData.clubName
+          club: formData.clubName
           // school: formData.school,
         }),
       })
@@ -577,7 +577,7 @@ export default function SignUp() {
       }
 
       console.log(data)
-      router.push("/CraftClub/Auth/SignIn")
+      router.push("/Components/Auth/SignIn")
 
     } catch (error) {
       console.error("Network error:", error)
@@ -966,7 +966,7 @@ export default function SignUp() {
                       <p className="text-sm text-gray-600">
                         Already have an account?
                         <span
-                          onClick={() => { router.push("/CraftClub/Auth/JudgeSignIn") }}
+                          onClick={() => { router.push("/Components/Auth/JudgeSignIn") }}
                           style={{ cursor: 'pointer' }} className="text-blue-600 hover:text-blue-700 font-medium">
                           Sign in
                         </span>

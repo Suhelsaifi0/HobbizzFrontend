@@ -16,9 +16,7 @@ import toast, { Toaster } from 'react-hot-toast';
 
 // import "../../../Components/DISTRICT/DirectorDashboard"
 
-// import Navbar from "../../Navbar/AuthNavbar/page"
 import Navbar from "../../Navbar/AuthNavbar/page"
-
 
 
 
@@ -64,13 +62,13 @@ export default function SignIn() {
 
 
   const GotoDashBoard = () => {
-    router.push('../../../CraftClub/home');
+    router.push('../../../Components/home');
   }
   const GotoDashBoardDirector = () => {
-    router.push('../../../CraftClub/DISTRICT/DirectorDashboard');
+    router.push('../../../Components/DISTRICT/DirectorDashboard');
   }
   const GotoDistrictSignup = () => {
-    router.push('../../../CraftClub/Auth/DistricctSignUp');
+    router.push('../../../Components/Auth/DistricctSignUp');
   }
 
 
@@ -78,7 +76,7 @@ export default function SignIn() {
 
 
         //sending data to server
-        fetch(`${process.env.NEXT_PUBLIC_API_URL}/CRAFTDIRECTOR-signin`, {
+        fetch(`${process.env.NEXT_PUBLIC_API_URL}/director-signin`, {
             method: "post",
             headers: {
                 "Content-Type": "application/json",
@@ -311,7 +309,7 @@ export default function SignIn() {
                     </Button>
                   </motion.div>
 
-                  <motion.div
+                  {/* <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.8 }}
@@ -323,7 +321,7 @@ export default function SignIn() {
                         Sign up
                       </span>
                     </p>
-                  </motion.div>
+                  </motion.div> */}
                 </form>
               </CardContent>
             </Card>

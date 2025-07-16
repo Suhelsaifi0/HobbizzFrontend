@@ -61,35 +61,35 @@ export default function SignIn() {
 
 
   const GotoDashBoard = () => {
-    router.push('/CraftClub/EDITOR/EditorDashboard');
+    router.push('/Components/EDITOR/EditorDashboard');
   }
   const GotoDashBoardDirector = () => {
-    router.push('/CraftClub/EDITOR/EditorDashboard');
+    router.push('/Components/EDITOR/EditorDashboard');
   }
   const GotoDistrictSignup = () => {
-    router.push('/CraftClub/Auth/DistricctSignUp');
+    router.push('/Components/Auth/DistricctSignUp');
   }
 
 
   const GotoJudgeDashBoard = () => {
-    router.push('/CraftClub/Judge/JudgeDashBoard');
+    router.push('/Components/Judge/JudgeDashBoard');
   }
 
 
   const GotoPrincipleSignUp = () => {
-    router.push('/CraftClub/Auth/PrincipleSignUp');
+    router.push('/Components/Auth/PrincipleSignUp');
   }
 
 
    const GotoPrincipleDashBoard = () => {
-    router.push('/CraftClub/Principle/PrincipleDashBoard');
+    router.push('/Components/Principle/PrincipleDashBoard');
   }
 
   const postData = () => {
 
 
         //sending data to server
-        fetch(`${process.env.NEXT_PUBLIC_API_URL}/CRAFTPRINCIPLE-signin`, {
+        fetch(`${process.env.NEXT_PUBLIC_API_URL}/principle-signin`, {
             method: "post",
             headers: {
                 "Content-Type": "application/json",
@@ -322,7 +322,7 @@ export default function SignIn() {
                     </Button>
                   </motion.div>
 
-                  <motion.div
+                  {/* <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.8 }}
@@ -334,7 +334,7 @@ export default function SignIn() {
                         Sign up
                       </span>
                     </p>
-                  </motion.div>
+                  </motion.div> */}
                 </form>
               </CardContent>
             </Card>

@@ -549,7 +549,7 @@ export default function SignUp() {
     )
 
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/CRAFTDIRECTOR-signup`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/director-signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -561,7 +561,7 @@ export default function SignUp() {
           ip: ip,
           state: formData.state,
           district: formData.district,
-          clubName: formData.clubName
+          club: formData.clubName
           // school: formData.school,
         }),
       })
@@ -577,7 +577,7 @@ export default function SignUp() {
       }
 
       console.log(data)
-      router.push("/CraftClub/Auth/DistrictSignIn")
+      router.push("/Components/Auth/SignIn")
 
     } catch (error) {
       console.error("Network error:", error)
@@ -835,7 +835,7 @@ export default function SignUp() {
                               <SelectValue placeholder="Select category" />
                             </SelectTrigger>
                             <SelectContent>
-                              {["artclub", "Photography", "dance" , "craft"].map((category) => (
+                              {["artclub", "Photography", "dance"].map((category) => (
                                 <SelectItem key={category} value={category}>
                                   {category}
                                 </SelectItem>
@@ -966,7 +966,7 @@ export default function SignUp() {
                       <p className="text-sm text-gray-600">
                         Already have an account?
                         <span
-                          onClick={() => { router.push("/CraftClub/Auth/DistrictSignIn") }}
+                          onClick={() => { router.push("/Components/Auth/DistrictSignIn") }}
                           style={{ cursor: 'pointer' }} className="text-blue-600 hover:text-blue-700 font-medium">
                           Sign in
                         </span>

@@ -14,7 +14,7 @@ const navigationItems = [
   { name: "Teacher", id : "Teacher" },
   { name: "Principle", id : "Principle"},
   { name: "Editor",  id : "Editor"},
-  { name: "Judge",  id : "Judge"},
+  // { name: "Judge",  id : "Judge"},
   // { name: "Team", href: "#team" },
   // { name: "Blog", href: "#blog" },
   // { name: "Contact", href: "#contact" },
@@ -23,7 +23,7 @@ const navigationItems = [
 ]
 
 
-// import "../../../CraftClub/Auth/SignIn"
+
 
 
 

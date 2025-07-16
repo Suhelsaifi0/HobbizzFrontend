@@ -61,30 +61,30 @@ export default function SignIn() {
 
 
   const GotoDashBoard = () => {
-    router.push('/CraftClub/EDITOR/EditorDashboard');
+    router.push('/Components/EDITOR/EditorDashboard');
   }
   const GotoDashBoardDirector = () => {
-    router.push('/CraftClub/EDITOR/EditorDashboard');
+    router.push('/Components/EDITOR/EditorDashboard');
   }
   const GotoDistrictSignup = () => {
-    router.push('/CraftClub/Auth/DistricctSignUp');
+    router.push('/Components/Auth/DistricctSignUp');
   }
 
 
   const GotoJudgeDashBoard = () => {
-    router.push('/CraftClub/Judge/JudgeDashBoard');
+    router.push('/Components/Judge/JudgeDashBoard');
   }
 
 
   const GotoJudgeSignUp = () => {
-    router.push('/CraftClub/Auth/JudgeSignup');
+    router.push('/Components/Auth/JudgeSignup');
   }
 
   const postData = () => {
 
 
         //sending data to server
-        fetch(`${process.env.NEXT_PUBLIC_API_URL}/CRAFTJUDGE-signin`, {
+        fetch(`${process.env.NEXT_PUBLIC_API_URL}/judge-signin`, {
             method: "post",
             headers: {
                 "Content-Type": "application/json",

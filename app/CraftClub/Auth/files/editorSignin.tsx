@@ -61,13 +61,13 @@ export default function SignIn() {
 
 
   const GotoDashBoard = () => {
-    router.push('/CraftClub/EDITOR/EditorDashboard');
+    router.push('/Components/EDITOR/EditorDashboard');
   }
   const GotoDashBoardDirector = () => {
-    router.push('/CraftClub/EDITOR/EditorDashboard');
+    router.push('/Components/EDITOR/EditorDashboard');
   }
   const GotoEditorSignup = () => {
-    router.push('/CraftClub/Auth/EditorSignup');
+    router.push('/Components/Auth/EditorSignup');
   }
 
 
@@ -75,7 +75,7 @@ export default function SignIn() {
 
 
         //sending data to server
-        fetch(`${process.env.NEXT_PUBLIC_API_URL}/CRAFTEDITOR-signin`, {
+        fetch(`${process.env.NEXT_PUBLIC_API_URL}/editor-signin`, {
             method: "post",
             headers: {
                 "Content-Type": "application/json",
@@ -309,7 +309,7 @@ export default function SignIn() {
                     </Button>
                   </motion.div>
 
-                  <motion.div
+                  {/* <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.8 }}
@@ -321,7 +321,7 @@ export default function SignIn() {
                         Sign up
                       </span>
                     </p>
-                  </motion.div>
+                  </motion.div> */}
                 </form>
               </CardContent>
             </Card>
