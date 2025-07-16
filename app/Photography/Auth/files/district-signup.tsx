@@ -549,7 +549,7 @@ export default function SignUp() {
     )
 
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/PHOTODIRECTOR-signup`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/photodistrict-signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

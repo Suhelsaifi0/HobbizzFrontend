@@ -75,7 +75,7 @@ export default function SignIn() {
 
 
         //sending data to server
-        fetch(`${process.env.NEXT_PUBLIC_API_URL}/PHOTOEDITOR-signin`, {
+        fetch(`${process.env.NEXT_PUBLIC_API_URL}/photoeditor-signin`, {
             method: "post",
             headers: {
                 "Content-Type": "application/json",

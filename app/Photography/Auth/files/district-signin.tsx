@@ -76,7 +76,7 @@ export default function SignIn() {
 
 
         //sending data to server
-        fetch(`${process.env.NEXT_PUBLIC_API_URL}/PHOTODIRECTOR-signin`, {
+        fetch(`${process.env.NEXT_PUBLIC_API_URL}/photodistrict-signin`, {
             method: "post",
             headers: {
                 "Content-Type": "application/json",

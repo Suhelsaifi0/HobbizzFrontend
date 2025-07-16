@@ -84,7 +84,7 @@ export default function SignIn() {
 
 
         //sending data to server
-        fetch(`${process.env.NEXT_PUBLIC_API_URL}/PHOTOJUDGE-sign`, {
+        fetch(`${process.env.NEXT_PUBLIC_API_URL}/photojudge-signin`, {
             method: "post",
             headers: {
                 "Content-Type": "application/json",

@@ -549,7 +549,7 @@ export default function SignUp() {
     )
 
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/PHOTOPRINCIPLE-signup`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/photoprinciple-signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
