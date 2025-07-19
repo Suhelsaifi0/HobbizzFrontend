@@ -26,7 +26,7 @@ const clubs = [
     image: "/placeholder.svg?height=200&width=300",
   },
   {
-    id: "photography",
+    id: "photo",
     name: "Photography Club",
     description: "Capture moments, create memories",
     members: 64,
@@ -151,7 +151,7 @@ export function ClubsGrid() {
                   <span>{club.meetingDays}</span>
                 </div>
               </div>
-              <Link href={`../../../Components/CABINATE/JoinClub/${club.id}`}>
+              <Link href={`/Photography/CABINATE/JoinClub/${club.id}`}>
                 <Button variant="outline" className="mt-4 w-full">
                   View Club
                 </Button>
